@@ -1,0 +1,16 @@
+[project]
+name = "weather-sync"
+version = "0.1.0"
+description = "Weather sync service for fetching weather data from public APIs"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[standard]>=0.119.0",
+    "httpx>=0.28.0",
+    "psycopg[binary]>=3.2.0",
+    "opentelemetry-distro>=0.59b0",
+    "opentelemetry-exporter-otlp-proto-grpc>=1.38.0",
+    "opentelemetry-instrumentation-fastapi>=0.59b0",
+    "opentelemetry-instrumentation-httpx>=0.59b0",
+    "opentelemetry-instrumentation-psycopg>=0.59b0",
+    "apscheduler>=3.10.0",
+]
